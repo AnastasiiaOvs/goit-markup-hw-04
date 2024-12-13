@@ -325,13 +325,13 @@ button {
 .social-media-menu {
     display: flex;
     margin: 0 auto;
-    gap: 24px;
     justify-content: center;
 }
 
 .social-media-elements {
     width: 40px;
     height: 40px;
+    gap: 24px;
 }
 
 .ellipse-container-section {
