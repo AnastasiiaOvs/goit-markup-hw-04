@@ -326,6 +326,7 @@ button {
     display: flex;
     margin: 0 auto;
     gap: 24px;
+    justify-content: center;
 }
 
 .social-media-elements {
@@ -338,12 +339,13 @@ button {
     width: 40px;
     height: 40px;
     background-color: var(--color-iris);
-    clip-path: ellipse(50% 50% at 50% 50%);
+    border-radius: 50%;
     justify-content: center;
     align-items: center;
 }
 
-.ellipse-container-section:hover {
+.ellipse-container-section:hover,
+.ellipse-container-section:focus {
 background-color: var(--color-ocean);
 }
 
@@ -506,10 +508,7 @@ li:first-child .ellipse-container-footer {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.ellipse-container-footer:hover {
-    background-color: var(--color-green);
-}
-
+.ellipse-container-footer:hover,
 .ellipse-container-footer:focus {
     background-color: var(--color-green);
 }
