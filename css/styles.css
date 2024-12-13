@@ -241,8 +241,8 @@ button {
 }
 
 .key_messages_ul {
-display: flex;
-flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .messages_li {
@@ -464,13 +464,13 @@ a {
 
 /* Логотип */
 .footer_logo {
-display: inline-block;
-margin-bottom: 16px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 span.studio {
     color: var(--color-cloud);
-      }
+}
 
 .final_text {
     color: var(--color-cloud);
@@ -494,14 +494,12 @@ span.studio {
 .social-media-elements {
     width: 40px;
     height: 40px;
-
 }
 
 .media-icons-footer {
     width: 24px;
     height: 24px;
     fill: var(--color-cloud);
-    
 }
 
 .ellipse-container-footer {
@@ -515,5 +513,5 @@ align-items: center;
 }
 
 .ellipse-container-footer:hover {
-    background-color: #31D0AA;
+    background-color: var(--color-green);
 }
