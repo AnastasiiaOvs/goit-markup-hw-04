@@ -260,11 +260,6 @@ button {
     margin-bottom: 8px;
 }
 
-.key_messages svg {
-    width: 64px;
-    height: 64px;
-}
-
 .messages_list {
     font-weight: 500;
     font-size: 20px;
