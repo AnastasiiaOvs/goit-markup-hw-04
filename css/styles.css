@@ -321,11 +321,6 @@ button {
     margin-bottom: 8px;
 }
 
-.social-media {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
 
 .social-media-menu {
     display: flex;
