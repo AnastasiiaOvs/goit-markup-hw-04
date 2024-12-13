@@ -271,7 +271,7 @@ button {
 
 .key_messages ul {
     display: flex;
-    gap: 24px;
+   gap: 24px;
 }
 
 /* Третя секція */
@@ -354,10 +354,8 @@ background-color: var(--color-ocean);
     width: 16px;
     height: 16px;
     fill: var(--color-cloud);
-    gap: 24px;
 }
 
-/* Четверта секція */
 /* Четверта секція */
 .portfolio {
     list-style-type: none;
@@ -479,8 +477,7 @@ span.studio {
     color: var(--color-white);
     margin-bottom: 16px;
 }
-
-.social-media-menu {
+.social-media-menu-footer {
     display: flex;
     gap: 16px;
 }
