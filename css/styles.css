@@ -41,7 +41,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-h1, h4, h5, h6, p {
+h1, h5, h6, p {
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -60,6 +60,11 @@ h2 {
 
 h3 {
     margin-bottom: 8px;
+    margin-top: 0;
+}
+
+h4 {
+    margin-bottom: 16px;
     margin-top: 0;
 }
 
@@ -86,13 +91,24 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
+}
+
+.contact {
+    color: var(--color-navyblue);
+    font-weight: 500; 
+    padding: 24px 0;
+    display: block;
     position: relative;
 }
 
+.contact:hover,
+.contact:focus {
+    color: var(--color-ocean);
+}
 
-.contact:active {
+.contact:active::after {
     display: inline-block;
-    width: 48px;
+    width: 100%;
     height: 4px;
     content: "";
     background-color: var(--color-ocean);
@@ -101,19 +117,6 @@ h3 {
     bottom: 0px;
     left: 0px;
 }
-
-.contact {
-    color: var(--color-navyblue);
-    font-weight: 500; 
-    padding: 24px 0;
-    display: block;
-}
-
-.contact:hover,
-.contact:focus {
-    color: var(--color-ocean);
-}
-
 
 /* Логотип */
 .logo {
@@ -202,6 +205,7 @@ button {
     white-space: nowrap;
     border: none;
     border-radius: 4px;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .button:hover,
@@ -237,6 +241,26 @@ flex-direction: row;
 
 .messages_li {
     width: calc((100% - 72px) / 4);
+}
+
+.messages-icons {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    background-color: var(--color-cloud);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: var(--color-slate);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.icons {
+width: 64px;
+height: 64px;
+
 }
 
 .messages_list {
@@ -296,6 +320,36 @@ flex-direction: row;
 
 .profession {
     font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.ellipse-container-section {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-iris);
+    clip-path: ellipse(50% 50% at 50% 50%);
+    justify-content: center;
+    align-items: center;
+}
+
+.ellipse-container-section:hover {
+background-color: var(--color-ocean);
+}
+
+.media-icons {
+    width: 16px;
+    height: 16px;
+    fill: var(--color-cloud);
+    gap: 24px;
 }
 
 /* Четверта секція */
@@ -331,6 +385,25 @@ flex-direction: row;
     width: calc((100% - 48px) / 3)
 }
 
+.portfolio_item {
+    position: relative;
+    overflow: hidden; 
+  }
+
+.overlay {
+    position: absolute;
+    padding: 40px 32px;
+    top: 0;
+    left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-iris);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: bottom 0.5s ease; 
+}
+
 .apps {
 	font-weight: 500;
 	font-size: 20px;
@@ -356,6 +429,12 @@ a {
     padding: 100px 0;
 }
 
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+}
+
 /* Логотип */
 .footer_logo {
 display: inline-block;
@@ -369,4 +448,25 @@ span.studio {
 .final_text {
     color: var(--color-cloud);
     max-width: 264px;
+}
+
+.media-icons-footer {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-cloud);
+    gap: 16px;
+}
+
+.ellipse-container-footer {
+display: flex;
+width: 40px;
+height: 40px;
+background-color: var(--color-iris);
+clip-path: ellipse(50% 50% at 50% 50%);
+justify-content: center;
+align-items: center;
+}
+
+.ellipse-container-footer:hover {
+    background-color: #31D0AA;
 }
