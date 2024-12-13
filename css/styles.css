@@ -247,7 +247,6 @@ flex-direction: row;
 
 .messages-icons {
     display: flex;
-    width: 264px;
     height: 112px;
     background-color: var(--color-cloud);
     border-radius: 4px;
@@ -257,8 +256,8 @@ flex-direction: row;
     margin-bottom: 8px;
 }
 
-.icons {
-width: 64px;
+.key_messages svg {
+    width: 64px;
 height: 64px;
 }
 
